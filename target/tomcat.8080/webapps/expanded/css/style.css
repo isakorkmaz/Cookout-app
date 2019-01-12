@@ -1,0 +1,379 @@
+@charset "UTF-8";
+
+#img {
+	background-image: url('../img/banner.jpg');
+	background-position: center;
+	background-size: 142% 100%;
+	background-repeat: no-repeat;
+}
+
+#error-msg {
+	color: #cc0000;
+}
+
+.error {
+	color: red;
+}
+
+.stayLeft {
+	text-align: left;
+}
+
+.currentUser {
+	text-color: white;
+	font-size: 20;
+}
+
+body {
+	background: fixed;
+	
+}
+
+h1 {
+	font-size: 100px;
+	opacity: 0.7;
+}
+
+h2 {
+	font-size: 50px;
+	text-shadow: -2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+h4 {
+	text-color: white;
+	font-size: 20px;	
+	text-shadow: -2px 2px 5px rgba(0, 0, 0, 1);
+	
+}
+
+a {
+	font-size: 20px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.detailsGrid {
+	display: felx;
+	flex-direction: column;
+}
+
+.hostEventDetails {
+	padding-top: 15px;
+}
+
+.hostEventAddress {
+	padding-top: 15px;
+}
+
+.rsvpButton {
+	padding-top: 15px;
+}
+
+#makeBold {
+	font-weight: bold;
+}
+
+.detailsRight {
+	grid-area: right;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.detailsLeft {
+	grid-area: left;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.guestGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "left right";
+}
+
+.leftGuest {
+	grid-area: left;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.rightGuest {
+	grid-area: right;
+}
+
+.menuItem {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "left right right";
+}
+
+.rightMenu {
+	grid-area: right;
+}
+
+.leftMenu {
+	grid-area: left;
+	text-align: left;
+}
+
+.menuButton {
+	display: grid;
+	grid-temlate-columns: 1fr 1fr;
+	grid-template-areas: "left right";
+}
+
+
+.rounded {
+	border: 1px;
+	border-radius: 4px;
+	
+}
+
+.roundedTop {
+	border: 1px;
+	border-radius: 4px 4px 0px 0px;
+	padding-bottom: 5px;
+}
+
+.roundedBottom {
+	border: 1px; 
+	border-radius: 0px 0px 4px 4px;
+	
+}
+
+.centered {
+	text-align: center;
+	color: #000000;
+}
+
+.btn {
+	width: 100%;
+	background-color: #cccccc;
+	opacity: 0.7;
+	text-shadow: -2px 2px 5px rgba(0, 0, 0, 1);
+	font-weight: bold;
+	color: #000000;
+}
+
+.btnMargBottom {
+	margin-bottom: 10px;
+}
+
+.btnMargTop {
+	margin-top: 10px;
+}
+
+.opaque {
+	background-color: #cccccc;
+	opacity: 0.7;
+}
+
+.deleteBackground {
+	background-color: white;
+}
+
+.allCookouts {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "hosted invited";
+}
+
+.hosted {
+	grid-area: hosted;
+	padding-bottom: 10em;
+	margin-right: 5px;	
+}
+
+.invited {
+	grid-area: invited;
+	padding-bottom: 10em;
+	margin-left: 5px;
+}
+
+.banner {
+	text-shadow: horizontal-offset vertical-offset blur color;
+	text-shadow: -5px 5px 5px rgba(0, 0, 0, 1);
+	background-size: cover;
+	height: 10em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #feffff;
+}
+
+.container {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.list {
+	display: list-item;
+	text-align: left;
+}
+
+.inline {
+	display: inline;
+}
+
+.login-labels label {
+	color: white;
+}
+
+.extendedPadding {
+	padding-bottom: 15em;
+	opacity: 0.7;
+}
+
+.miniPadTop {
+	padding-top: 2em;
+}
+.miniPad {
+	padding-bottom: 1em;
+}
+
+.leftMarg {
+	margin-left: 2em;
+}
+
+.width100 {
+	width: 100%;
+}
+
+.width50 {
+	width: 50%;
+}
+
+.eventInfoLabel{
+display: inline-block;
+width: 150px;
+text-align: left;
+}
+.eventInfoInput{
+resize:horizontal;
+width:152px;
+}
+.hostEventDetailButton{
+resize:horizontal;
+width:152px;
+}
+.hostEventDetailButton:hover{
+background-color: #796D6B;
+resize:horizontal;
+width:152px;
+}
+
+#hostEventDetails{
+font-weight: bold;
+text-align: left;
+font-size: 1.5em;
+}
+
+#divHostEventDetailButtons{
+display:flex;
+flex-direction: column;
+justify-content: space-evenly ;
+}
+
+#hostEvenDetailsOpaqueContainer{
+display:flex;
+flex-direction:row;
+justify-content: space-around ;
+padding-bottom:30px;
+}
+
+#changeAddressOpaqueContainer{
+display:flex;
+flex-direction:column;
+justify-content: space-around ;
+padding-bottom:30px;
+}
+
+.fourColumns{
+display:inline-grid;
+grid-template-columns:.1fr 4fr 4fr 4fr 4fr 1fr;
+grid-template-areas: ". a b c d .";
+}
+
+.entrees {
+  grid-area: a;
+}
+.sides{
+  grid-area: b;
+}
+.desserts{
+  grid-area: c;
+}
+.beverages{
+  grid-area: d;
+}
+ 
+ 
+.ul{ 
+text-align:left;
+}
+.btn2 {
+margin-top:1em;
+width: 100%;
+opacity: 0.7;
+text-shadow: -1px 1px 2px rgba(0, 0, 0, 1);
+font-weight: bold;
+color: #000000;
+}
+
+.guestGoToEvntButton{
+resize:horizontal;
+width:100%;
+}
+.guestGoToEvntButton:hover{
+background-color: #796D6B;
+resize:horizontal;
+width:100%;
+}
+.aLink{
+text-decoration: none;
+}
+.aLink:hover{
+text-decoration: none;
+}
+
+.marginBottom{
+margin-bottom:1em;
+}
+
+.all-orders-table {
+	margin-left:auto; 
+    margin-right:auto;
+    margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.all-orders-table th {
+	text-decoration: underline;
+}
+
+.category-column {
+    grid-area: category;
+    padding-left: 15px;
+	padding-right: 15px;
+}
+
+.item-column {
+    grid-area: item;
+   	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.guest-order-column {
+    grid-area: order;
+   	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.place-order-column {
+    grid-area: place;
+   	padding-left: 15px;
+	padding-right: 15px;
+}
